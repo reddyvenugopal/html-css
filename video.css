@@ -7,8 +7,8 @@
   line-height: 20px;
 }
 .author-photo{
-    width:40px;
-    border-radius: 30px;
+    width:36px;
+    border-radius: 30px;    
 }
 .video-inf{
     margin-top: 10px;
@@ -30,4 +30,35 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap:16px;
     row-gap: 40px;
+   
+}
+
+@media(max-width:750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width:751px) and (max-width:999px){
+    .video-grid{
+        grid-template-columns: 1fr,1fr 1fr;
+    }
+}
+
+@media(min-width:1000px){
+    .video-grid{
+        grid-template-columns: 1fr,1fr,1fr 1fr;
+    }
+}
+
+
+.video-time{
+    background-color: black;
+    color:white;
+    position: absolute;
+    bottom:8px;
+    right:5px;
+}
+thumbnail-row{
+    position: relative;
 }
